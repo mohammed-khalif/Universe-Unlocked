@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #image-container {
+    width: 80%;
+    margin: 20px;
+  }
+  
+  #apod-image {
+    width: 100%;
+    border: 5px solid black;
+  }
+  
+  #description-container {
+    width: 80%;
+    margin: 20px;
+  }
+  
+  #title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #date {
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  #explanation {
+    margin-top: 10px;
+  }
+
+  
