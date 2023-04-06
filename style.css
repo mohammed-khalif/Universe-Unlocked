@@ -16,6 +16,7 @@
   padding: 5px;
   border: 1px solid var(--border-color);
   border-radius: 5px;
+  font-size: 16px;
   }
   
   #searchBtn {
@@ -25,6 +26,11 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  }
+  
+  #searchBtn:hover {
+  background-color: #3e8e41;
   }
   
   /* Styles for the portrait card */
@@ -32,7 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px 0;
+  margin: 50px 0;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -40,15 +46,16 @@
   overflow: hidden;
   position: relative;
   transition: transform 0.2s ease-in-out;
+  max-width: 400px;
   }
   
   .portrait-card:hover {
-  transform: scale(1.00);
+  transform: scale(1.05);
   }
   
   .portrait-card img {
   display: block;
-  width: 40%;
+  width: 100%;
   height: auto;
   border-radius: 3px;
   }
@@ -85,6 +92,16 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  }
+  
+  .like-btn:hover {
+  background-color: #3e8e41;
+  }
+  
+  .like-btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
   }
   
   .portrait-card button.like-btn {
@@ -102,13 +119,8 @@
   
   .portrait-card button.like-btn:hover,
   .portrait-card button.like-btn:active {
-  background-color:black;
+  background-color: #333;
   color: #fff;
-  }
-  
-  .portrait-card button.like-btn:disabled {
-  background-color: lightgray;
-  cursor: allowed;
   }
   
   /* Styles for the list of titles */
@@ -125,20 +137,48 @@
   
   /* Styles for the search form */
   #searchForm {
-  margin: 20px 0;
+  margin:0;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  #searchForm h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
   }
   
-  #searchInput {
-  border: 1px solid red;
-  border-radius: 3px;
-  font-size: 16px;
-  padding: 5px 10px;
-  width: 200px;
+  #searchForm input[type="text"] {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 600px;
   }
   
-  #searchBtn {
-  background-color:black;
+  #searchForm button[type="submit"] {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
   border: none;
-  border-radius:none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  max-width: 600px;
+  transition: background-color 0.3s ease-out;
+  }
+  
+  #searchForm button[type="submit"]:hover {
+  background-color: #3e8e41;
   }
