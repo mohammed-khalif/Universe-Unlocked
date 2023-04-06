@@ -1,178 +1,144 @@
-/* Style for the search bar */
-#searchBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+:root {
+  --border-color: black;
+  --shadow-color: gray;
+  }
+  
+  /* Styles for the search form */
+  #searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
   }
   
   #searchInput {
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
   }
   
   #searchBtn {
-    padding: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Style for the portrait card */
-  .portrait-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px gray;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .portrait-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .portrait-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .portrait-card h2 {
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .portrait-card p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .portrait-card p.hidden {
-    display: none;
-  }
-  
-  .like-btn {
-    margin-top: 10px;
-    padding: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  /* Styles for the list of titles */
-#NASA {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #NASA li {
-    font-size: 18px;
-    margin-bottom: 10px;
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   }
   
   /* Styles for the portrait card */
   .portrait-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  }
+  
+  .portrait-card:hover {
+  transform: scale(1.00);
   }
   
   .portrait-card img {
-    display: block;
-    height: auto;
-    max-width: 100%;
+  display: block;
+  width: 40%;
+  height: auto;
+  border-radius: 3px;
   }
   
   .portrait-card h2 {
-    background-color: #333;
-    color: #fff;
-    font-size: 20px;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
   }
   
   .portrait-card p {
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  font-weight: bold;
   }
   
   .portrait-card p.hidden {
-    max-height: none;
+  max-height: none;
+  }
+  
+  .like-btn {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   }
   
   .portrait-card button.like-btn {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    color: #333;
-    cursor: pointer;
-    display: block;
-    margin: 10px auto;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease-out;
-    width: 80px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  margin: 10px auto;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease-out;
+  width: 80px;
   }
   
   .portrait-card button.like-btn:hover,
   .portrait-card button.like-btn:active {
-    background-color: #ccc;
-    color: #fff;
+  background-color:black;
+  color: #fff;
   }
   
   .portrait-card button.like-btn:disabled {
-    background-color: lightgray;
-    cursor: not-allowed;
+  background-color: lightgray;
+  cursor: allowed;
+  }
+  
+  /* Styles for the list of titles */
+  #NASA {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  #NASA li {
+  font-size: 18px;
+  margin-bottom: 10px;
   }
   
   /* Styles for the search form */
   #searchForm {
-    margin: 20px 0;
-    text-align: center;
+  margin: 20px 0;
+  text-align: center;
   }
   
   #searchInput {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-    padding: 5px 10px;
-    width: 200px;
+  border: 1px solid red;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 5px 10px;
+  width: 200px;
   }
   
   #searchBtn {
-    background-color: #333;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease-out;
+  background-color:black;
+  border: none;
+  border-radius:none;
   }
-  
-  #searchBtn:hover,
-  #searchBtn:active {
-    background-color: #555;
-  }
-  
-  

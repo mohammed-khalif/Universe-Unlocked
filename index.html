@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Beautiful Space Pictures That Will Make Your Day</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <form>
-        <input type="text" id="searchInput" placeholder="Search...">
-        <button type="submit" id="searchBtn">Search</button>
-    </form>
-
     <h1>SPACE</h1>
     <h5>ICONIC PICTURES OF NASA</h5>
+php
+Copy code
+<form>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button type="submit" id="searchBtn">Search</button>
+</form>
 
-    <ul id="NASA"></ul>
+<ul id="NASA"></ul>
 
-    <div id="card"></div>
+<div id="card"></div>
 
-    <!-- HTML code for the like button -->
-    <button id="likeBtn">Like</button>
+<!-- HTML code for the like button -->
+<button id="likeBtn">Like</button>
 
-    <!-- HTML code for the comments section -->
-    <div id="comments">
-        <h2>Comments</h2>
-        <form>
-            <input type="text" id="commentInput" placeholder="Leave a comment">
-            <button type="submit" id="commentBtn">Post</button>
-        </form>
-        <ul id="commentList"></ul>
-    </div>
+<!-- HTML code for the comments section -->
+<div id="comments">
+    <h2>Comments</h2>
+    <form>
+        <input type="text" id="commentInput" placeholder="Leave a comment">
+        <button type="submit" id="commentBtn">Post</button>
+    </form>
+    <ul id="commentList"></ul>
+</div>
 
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
