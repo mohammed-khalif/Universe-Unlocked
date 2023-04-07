@@ -146,7 +146,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  }header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  form {
+    margin: 0;
+  }
+  
+
+
   
   #searchForm h2 {
   margin: 0;
@@ -182,3 +197,32 @@
   #searchForm button[type="submit"]:hover {
   background-color: #3e8e41;
   }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1, h4, form {
+    margin: 0;
+  }
+  
+  form {
+    margin-top: 0px;
+  }
+  #comments {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 200px;
+  }
+  
+  #comments ul {
+    position: absolute;
+    bottom: 100;
+    width: 100%;
+    margin: 100;
+    padding: 0;
+  }
+  
