@@ -1,228 +1,188 @@
-:root {
-  --border-color: black;
-  --shadow-color: gray;
+/* Apply styles to the body and div elements */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
   }
   
-  /* Styles for the search form */
-  #searchBar {
+  div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
-  #searchInput {
-  margin-right: 10px;
-  padding: 5px;
-  border: 1px solid var(--border-color);
+  h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  }
+  
+  h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: gray;
+  }
+  
+  /* Apply styles to the search form */
+  form {
+  display: flex;
+  align-items: center;
+  }
+  
+  input[type="text"] {
+  padding: 10px;
   border-radius: 5px;
-  font-size: 16px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  #searchBtn {
-  padding: 5px;
-  background-color: #4CAF50;
+  button[type="submit"] {
+  background-color: #f44336;
   color: white;
+  padding: 10px;
   border: none;
   border-radius: 5px;
+  margin-left: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
   }
   
-  #searchBtn:hover {
-  background-color: #3e8e41;
+  button[type="submit"]:hover {
+  background-color: #e53935;
   }
   
-  /* Styles for the portrait card */
+  /* Apply styles to the unordered list */
+  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  /* Apply styles to the portrait cards */
   .portrait-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.2s ease-in-out;
-  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
   }
   
   .portrait-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   
   .portrait-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 3px;
+  margin-bottom: 10px;
+  max-height: 400px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
   }
   
-  .portrait-card h2 {
-  background-color: #333;
-  color: #fff;
-  font-size: 20px;
-  margin: 0;
-  padding: 10px;
-  text-align: center;
+  .portrait-card:hover img {
+  transform: scale(1.1);
+  }
+  
+  .bold-text {
   font-weight: bold;
   }
   
-  .portrait-card p {
-  font-size: 16px;
-  line-height: 1.4;
-  margin: 10px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  font-weight: bold;
-  }
-  
-  .portrait-card p.hidden {
-  max-height: none;
+  .hidden {
+  display: none;
   }
   
   .like-btn {
-  margin-top: 10px;
-  padding: 5px;
-  background-color: #4CAF50;
+  background-color: #f44336;
   color: white;
+  padding: 10px;
   border: none;
   border-radius: 5px;
+  margin-top: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
   }
   
   .like-btn:hover {
-  background-color: #3e8e41;
+  background-color: #e53935;
   }
   
-  .like-btn:disabled {
-  background-color: lightgray;
-  cursor: not-allowed;
-  }
-  
-  .portrait-card button.like-btn {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  color: #333;
-  cursor: pointer;
-  display: flex;
-  margin: 10px auto;
-  padding: 5px 10px;
-  transition: background-color 0.3s ease-out;
-  width: 80px;
-  }
-  
-  .portrait-card button.like-btn:hover,
-  .portrait-card button.like-btn:active {
-  background-color: #333;
-  color: #fff;
-  }
-  
-  /* Styles for the list of titles */
-  #NASA {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  }
-  
-  #NASA li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  }
-  
-  /* Styles for the search form */
-  #searchForm {
-  margin:0;
+  /* Apply styles to the comments section */
+  #comments {
+  margin: 20px;
   padding: 20px;
-  background-color: #f2f2f2;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px var(--shadow-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  form {
-    margin: 0;
-  }
-  
-
-
-  
-  #searchForm h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  }
-  
-  #searchForm input[type="text"] {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  font-size: 18px;
-  width: 100%;
-  max-width: 600px;
-  }
-  
-  #searchForm button[type="submit"] {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  width: 100%;
-  max-width: 600px;
-  transition: background-color 0.3s ease-out;
-  }
-  
-  #searchForm button[type="submit"]:hover {
-  background-color: #3e8e41;
-  }
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  h1, h4, form {
-    margin: 0;
-  }
-  
-  form {
-    margin-top: 0px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   }
   #comments {
-    position: relative;
-    margin-top: 5px;
-    margin-bottom: 200px;
-  }
-  
-  #comments ul {
-    position: absolute;
-    bottom: 100;
-    width: 100%;
-    margin: 100;
-    padding: 0;
-  }
-  
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    }
+    
+    .comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    
+    .comment img {
+    max-height: 40px;
+    max-width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .comment p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Apply styles to the form for adding comments */
+    #add-comment-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none;
+    margin-bottom: 10px;
+    }
+    
+    button[type="submit"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    button[type="submit"]:hover {
+    background-color: #e53935;
+    }
