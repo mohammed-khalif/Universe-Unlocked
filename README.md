@@ -1,29 +1,38 @@
-# The-Champions
+NASA Pictures
+This project displays five of NASA's most iconic images.
 
-## Description 
-This is a web app that showcases the journey Manchester City went through last season to become the champions of england.The website has the following features;
--A blog that narrates a short story on last season's dramatic events and how they came to win the premier league
--A video of Manchester united lifting the trophy and celebrating.
--A feedback form.
--Players link that contains the squad players of 2013.
--Awards link that contains the best players that season.
--Login link that allows you to login to the website.
--A functioning search bar.
+NASA Banner
 
-## Requirements
--Create git hub repository.
--Add Collaborator(Technical Mentor)
--Make the neccessary files eg.JS, JSON, HTML & CSS.
+Images
+The following are the images displayed on this website:
 
+Hubble's Extreme Deep Field composite.
+This image is an incredible composite view of the universe, including over 5000 galaxies. It shows how our universe has grown up and how galaxies have gone from tiny seeds of structure to the modern behemoths we have today.
 
-## Installations
-For this program you do not need to install anything.
+Hubble's Extreme Deep Field
 
-## Running the program
--Run the following URL on the browser to access the program;
-('https://inspiring-chebakia-af3a0b.netlify.app/')
+Apollo 8's Earthrise photo
+This photo is known simply as “Earthrise” and is the first time a human being had ever seen the Earth rise over the limb of the Moon. It showed humanity, for the first time, how special and precious and tiny and fragile Earth is.
 
+Apollo 8's Earthrise
 
-## Authors
+WMAP's baby picture of the Universe
+This image is a baby picture of the universe, showing the magnitude and distribution of overdense and underdense regions that grew into galaxies, clusters, and great cosmic voids. It revealed the picture of our Universe as being a mix of dark matter, normal matter, and dark energy, changing our perception of the Universe as we know it.
 
-By mohamed yusuf
+WMAP's baby picture of the Universe
+
+Voyager's Pale Blue Dot snapshot
+This is the most distant photo of Earth ever taken, captured by Voyager 1 spacecraft from six billion kilometers away. It shows how small and insignificant our planet is in the grand scheme of things.
+
+Voyager's Pale Blue Dot snapshot
+
+Hubble's Pillars of Creation image
+This image is of the Eagle Nebula and shows columns of gas amid the stars that contain proto-stars still in the process of forming. These columns are being evaporated from both the inside and the outside, thanks to the ultraviolet light emitted from the hot, young stars that have just been created.
+
+Hubble's Pillars of Creation image
+
+Technologies Used
+HTML
+CSS
+Credits
+Forbes for the images and descriptions.
