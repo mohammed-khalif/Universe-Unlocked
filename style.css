@@ -22,7 +22,7 @@ body {
   h4 {
   margin: 0;
   font-size: 1rem;
-  color: gray;
+  color: red;
   }
   
   /* Apply styles to the search form */
@@ -40,7 +40,7 @@ body {
   
   button[type="submit"] {
   background-color: #f44336;
-  color: white;
+  color: black;
   padding: 10px;
   border: none;
   border-radius: 5px;
